@@ -2,19 +2,19 @@
 
 module tb_multiplier;
 
-reg clk;
 reg signed [7:0] A, B;
 wire signed [15:0] P;
 
 // Change module name here for testing
-array_multiplier_top uut (
+booth_rad2_multiplier uut (
     .A(A),
     .B(B),
     .P(P)
 );
 
+
 initial begin
-  
+
     A = 10;   B = 5;    #10;
     A = -10;  B = 5;    #10;
     A = 10;   B = -5;   #10;
