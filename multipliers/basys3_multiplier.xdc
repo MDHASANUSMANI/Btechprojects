@@ -46,6 +46,5 @@ set_property PACKAGE_PIN L1  [get_ports {led[15]}]
 
 set_property IOSTANDARD LVCMOS33 [get_ports led[*]]
 
-## Realistic switching 
-set_switching_activity -static_probability 0.5 -toggle_rate 0.01 [get_ports sw[*]]
-set_switching_activity -static_probability 0.5 -toggle_rate 0.01 [get_ports led[*]]
+## Switching activity (realistic)
+set_switching_activity -static_probability 0.5 -toggle_rate 0.1 [get_ports sw[*]]

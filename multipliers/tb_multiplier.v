@@ -2,11 +2,12 @@
 
 module tb_multiplier;
 
+
 reg signed [7:0] A, B;
 wire signed [15:0] P;
 
 // Change module name here for testing
-booth_rad2_multiplier uut (
+booth_rad4_multiplier uut (
     .A(A),
     .B(B),
     .P(P)
